@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-color="green">
+<head>
+    <script src="js/theme-loader.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasindu Rathnayake | Senior Software Engineer</title>
+    <meta name="description" content="Portfolio of Hasindu Rathnayake, a Senior Full Stack Engineer specializing in Laravel, modern JS frameworks, and cloud architecture.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+
+    <!-- Vertical Navigation -->
+    <nav class="vertical-nav">
+        <div class="nav-label" onclick="scrollToSection('home')">Home</div>
+        <div class="nav-line"></div>
+        <div class="nav-dots">
+            <div class="nav-dot active" data-label="Home" onclick="scrollToSection('home')"></div>
+            <div class="nav-dot" data-label="About" onclick="scrollToSection('about')"></div>
+            <div class="nav-dot" data-label="Skills" onclick="scrollToSection('skills')"></div>
+            <div class="nav-dot" data-label="Works" onclick="scrollToSection('works')"></div>
+            <div class="nav-dot" data-label="Contact" onclick="scrollToSection('contact')"></div>
+        </div>
+    </nav>
+
+    <!-- Theme Controls -->
+    <div class="theme-controls">
+        <button class="theme-btn" onclick="toggleTheme()">
+            <i class="fas fa-moon"></i>
+        </button>
+        <div class="color-picker">
+            <button class="theme-btn" onclick="toggleColorPicker()">
+                <i class="fas fa-palette"></i>
+            </button>
+            <div class="color-options">
+                <div class="color-opt" data-color="pink" onclick="changeColor('pink')"></div>
+                <div class="color-opt" data-color="blue" onclick="changeColor('blue')"></div>
+                <div class="color-opt" data-color="purple" onclick="changeColor('purple')"></div>
+                <div class="color-opt active" data-color="green" onclick="changeColor('green')"></div>
+                <div class="color-opt" data-color="orange" onclick="changeColor('orange')"></div>
+                <div class="color-opt" data-color="red" onclick="changeColor('red')"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="vertical-title">Home</div>
+        <div class="section-container">
+            <div class="hero-grid">
+                <div class="hero-content reveal">
+                    <h1>Senior Software <span>Engineer</span></h1>
+                    <p>Hi, I'm Hasindu Rathnayake, a Senior Full Stack Engineer specializing in Laravel, modern JS frameworks (Vue, Nuxt, Angular), and cloud architecture, with over 5 years of experience building scalable, high-performance systems.</p>
+                    <div class="hero-buttons">
+                        <a href="#works" class="btn btn-primary">
+                            View Works <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            Contact Me <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal">
+                    <div class="hero-circle-container">
+                        <div class="hero-glow"></div>
+                        <div class="hero-ring hero-ring-1"></div>
+                        <div class="hero-ring hero-ring-2"></div>
+                        <div class="hero-ring hero-ring-3"></div>
+                        <div class="hero-circle">
+                            <img src="images/profile.png" alt="Hasindu Rathnayake" class="hero-profile-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="vertical-title">About</div>
+        <div class="section-container">
+            <div class="section-header reveal">
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>I'm a senior full stack engineer with over 5 years of experience specializing in Laravel, modern JS frameworks, and cloud architecture. I am a creative problem solver who thinks outside the box to find unconventional, efficient solutions to complex technical challenges.</p>
+                    <p>My approach combines clean design principles with cutting-edge technology to deliver solutions that not only perform exceptionally but also address real-world business needs. I graduated top of my class with a BIT (Hons) in Networking & Mobile Computing from Horizon Campus, and hold certifications in Generative AI from IBM, Google Cloud, and Packt.</p>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-laravel"></i></div>
+                            <div class="skill-info">
+                                <h4>Laravel</h4>
+                                <span>Backend & APIs</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-vuejs"></i></div>
+                            <div class="skill-info">
+                                <h4>Vue.js & Nuxt.js</h4>
+                                <span>Frontend & SPA</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-aws"></i></div>
+                            <div class="skill-info">
+                                <h4>AWS & Docker</h4>
+                                <span>Cloud & DevOps</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <div class="skill-info">
+                                <h4>Python & GenAI</h4>
+                                <span>Intelligent Apps</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-cards reveal">
+                    <div class="about-card">
+                        <div class="about-card-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Full Stack Dev</h3>
+                        <p>Building scalable RESTful APIs and modern frontends with Laravel, Vue, Nuxt, and Angular.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon"><i class="fas fa-cloud"></i></div>
+                        <h3>Cloud & DevOps</h3>
+                        <p>Automating deployments, setting up robust AWS infrastructure, and configuring reliable CI/CD pipelines.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon"><i class="fas fa-brain"></i></div>
+                        <h3>AI & Automation</h3>
+                        <p>Integrating Generative AI, building intelligent features, and developing efficient RPA automations using UiPath.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon"><i class="fas fa-database"></i></div>
+                        <h3>Performance Tuning</h3>
+                        <p>Optimizing database queries, database schema design, and caching strategies to speed up data retrieval.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-container">
+            <div class="skills-wrapper">
+                <div class="skills-vertical-label">My Skills</div>
+                <div class="skills-content">
+                    <div class="skills-header reveal">
+                        <h2>Technical <span>Expertise</span></h2>
+                    </div>
+
+                    <div class="skill-category reveal">
+                        <h3 class="skill-category-title">
+                            <i class="fas fa-code"></i> Languages & Frameworks
+                        </h3>
+                        <div class="skill-bars">
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-header">
+                                    <span class="skill-bar-name">Laravel & PHP</span>
+                                    <span class="skill-bar-percent">95%</span>
+                                </div>
+                                <div class="skill-bar-track">
+                                    <div class="skill-bar-fill" data-width="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-header">
+                                    <span class="skill-bar-name">JavaScript & TypeScript</span>
+                                    <span class="skill-bar-percent">92%</span>
+                                </div>
+                                <div class="skill-bar-track">
+                                    <div class="skill-bar-fill" data-width="92"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-header">
+                                    <span class="skill-bar-name">Vue.js & Nuxt.js</span>
+                                    <span class="skill-bar-percent">90%</span>
+                                </div>
+                                <div class="skill-bar-track">
+                                    <div class="skill-bar-fill" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-header">
+                                    <span class="skill-bar-name">Python & Java (Spring Boot)</span>
+                                    <span class="skill-bar-percent">80%</span>
+                                </div>
+                                <div class="skill-bar-track">
+                                    <div class="skill-bar-fill" data-width="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category reveal">
+                        <h3 class="skill-category-title">
+                            <i class="fas fa-server"></i> Databases & Cloud (DevOps)
+                        </h3>
+                        <div class="skill-bars">
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-header">
+                                    <span class="skill-bar-name">MySQL, PostgreSQL & MongoDB</span>
+                                    <span class="skill-bar-percent">90%</span>
+                                </div>
+                                <div class="skill-bar-track">
+                                    <div class="skill-bar-fill" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-header">
+                                    <span class="skill-bar-name">AWS Infrastructure & Docker</span>
+                                    <span class="skill-bar-percent">85%</span>
+                                </div>
+                                <div class="skill-bar-track">
+                                    <div class="skill-bar-fill" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-header">
+                                    <span class="skill-bar-name">CI/CD Pipelines & Git</span>
+                                    <span class="skill-bar-percent">90%</span>
+                                </div>
+                                <div class="skill-bar-track">
+                                    <div class="skill-bar-fill" data-width="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category reveal">
+                        <h3 class="skill-category-title">
+                            <i class="fas fa-robot"></i> Automation & Tools
+                        </h3>
+                        <div class="skill-bars">
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-header">
+                                    <span class="skill-bar-name">UiPath RPA (Developer & Admin)</span>
+                                    <span class="skill-bar-percent">92%</span>
+                                </div>
+                                <div class="skill-bar-track">
+                                    <div class="skill-bar-fill" data-width="92"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-header">
+                                    <span class="skill-bar-name">Power Apps & SharePoint</span>
+                                    <span class="skill-bar-percent">85%</span>
+                                </div>
+                                <div class="skill-bar-track">
+                                    <div class="skill-bar-fill" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-header">
+                                    <span class="skill-bar-name">Figma</span>
+                                    <span class="skill-bar-percent">80%</span>
+                                </div>
+                                <div class="skill-bar-track">
+                                    <div class="skill-bar-fill" data-width="80"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-header">
+                                    <span class="skill-bar-name">Photoshop</span>
+                                    <span class="skill-bar-percent">60%</span>
+                                </div>
+                                <div class="skill-bar-track">
+                                    <div class="skill-bar-fill" data-width="60"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="cv.pdf" download="Hasindu_Rathnayake_CV.pdf" class="download-resume reveal">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works Section -->
+    <section id="works">
+        <div class="vertical-title">Works</div>
+        <div class="section-container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="works-grid">
+                <div class="work-card reveal" onclick="openModal(0)">
+                    <div class="work-bg">
+                        <img src="images/projects/wa-works/dashboard-l.png" alt="Talent Match AI">
+                    </div>
+                    <div class="work-overlay">
+                        <h3>Talent Match AI</h3>
+                        <span>AI & Full Stack</span>
+                    </div>
+                </div>
+                <div class="work-card reveal" onclick="openModal(1)">
+                    <div class="work-bg">
+                        <img src="images/projects/blaze/main.png" alt="Blaze Entertainment">
+                    </div>
+                    <div class="work-overlay">
+                        <h3>Blaze Entertainment</h3>
+                        <span>Full Stack Web</span>
+                    </div>
+                </div>
+                <div class="work-card reveal" onclick="openModal(2)">
+                    <div class="work-bg">
+                        <img src="images/projects/coin-xata/main.png" alt="Coin-Xata">
+                    </div>
+                    <div class="work-overlay">
+                        <h3>Coin-Xata</h3>
+                        <span>Full Stack Web</span>
+                    </div>
+                </div>
+                <div class="work-card reveal" onclick="openModal(3)">
+                    <div class="work-bg">
+                        <img src="images/projects/aroma-xata/2.png" alt="Aroma-Xata">
+                    </div>
+                    <div class="work-overlay">
+                        <h3>Aroma-Xata</h3>
+                        <span>AI & Full Stack</span>
+                    </div>
+                </div>
+                <div class="work-card reveal" onclick="openModal(4)">
+                    <div class="work-bg">
+                        <img src="images/projects/tea-leaf/2.png" alt="Tea Leaf">
+                    </div>
+                    <div class="work-overlay">
+                        <h3>Tea Leaf</h3>
+                        <span>Mobile App and Web App</span>
+                    </div>
+                </div>
+                <div class="work-card reveal" onclick="openModal(5)">
+                    <div class="work-bg">
+                        <img src="images/projects/the-coffee-69/main.png" alt="The Coffee 69">
+                    </div>
+                    <div class="work-overlay">
+                        <h3>The Coffee 69</h3>
+                        <span>Full Stack Web</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="vertical-title">Contact</div>
+        <div class="section-container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info reveal">
+                    <h3>Let's work together</h3>
+                    <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <span><a href="mailto:hasinduvajirangarath@gmail.com" style="color: inherit; text-decoration: none;">hasinduvajirangarath@gmail.com</a></span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <h4>Phone</h4>
+                                <span><a href="tel:+94778082978" style="color: inherit; text-decoration: none;">+94 77 808 2978</a></span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4>Location</h4>
+                                <span>Kandy, Sri Lanka</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form reveal" id="contact-form" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="cf-name" name="name" placeholder="Your Name" autocomplete="name">
+                            <div class="field-error" id="err-name">Please enter your full name.</div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="cf-email" name="email" placeholder="Your Email" autocomplete="email">
+                            <div class="field-error" id="err-email">Please enter a valid email address.</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="cf-subject" name="subject" placeholder="Subject">
+                        <div class="field-error" id="err-subject">Please enter a subject.</div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="cf-message" name="message" placeholder="Your Message (min. 20 characters)"></textarea>
+                        <div class="field-error" id="err-message">Please enter a message (at least 20 characters).</div>
+                    </div>
+                    <button type="submit" class="form-submit" id="cf-submit">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Hasindu Rathnayake<span>.</span></div>
+            <div class="footer-text">© 2026 All rights reserved.</div>
+        </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div id="toast-container"></div>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal" onclick="closeModal(event)">
+        <div class="modal" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+            <div class="modal-body">
+                <h2 id="modalTitle">Project Title</h2>
+                <div class="modal-category" id="modalCategory">Category</div>
+                <div class="modal-media-container" id="modalMediaContainer"></div>
+                <div class="modal-slider-dots" id="modalSliderDots"></div>
+                <p class="modal-desc" id="modalDesc">Description</p>
+                <div class="modal-tags" id="modalTags"></div>
+                <div id="project-btns" style="display: flex; gap: 15px;">
+                    <a href="#" id="live-p" class="btn btn-primary">Live Preview</a>
+                    <a href="#" id="source"  class="btn btn-secondary">Source Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
