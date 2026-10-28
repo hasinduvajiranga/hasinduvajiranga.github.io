@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hasindu Rathnayake | Senior Software Engineer</title>
     <meta name="description" content="Portfolio of Hasindu Rathnayake, a Senior Full Stack Engineer specializing in Laravel, modern JS frameworks, and cloud architecture.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -21,7 +21,6 @@
 
     <!-- Vertical Navigation -->
     <nav class="vertical-nav">
-        <div class="nav-label" onclick="scrollToSection('home')">Home</div>
         <div class="nav-line"></div>
         <div class="nav-dots">
             <div class="nav-dot active" data-label="Home" onclick="scrollToSection('home')"></div>
@@ -89,7 +88,12 @@
         <div class="vertical-title">About</div>
         <div class="section-container">
             <div class="section-header reveal">
-                <h2 class="section-title">About Me</h2>
+                <div class="section-terminal-line">
+                    <span class="t-path">~/hasindu</span>
+                    <span class="t-cmd">$ whoami</span>
+                    <span class="code-cursor" aria-hidden="true"></span>
+                </div>
+                <h2 class="section-title">About <span>Me</span></h2>
             </div>
             <div class="about-grid">
                 <div class="about-text reveal">
@@ -154,142 +158,139 @@
 
     <!-- Skills Section -->
     <section id="skills">
+        <div class="vertical-title">My Skills</div>
         <div class="section-container">
             <div class="skills-wrapper">
-                <div class="skills-vertical-label">My Skills</div>
                 <div class="skills-content">
                     <div class="skills-header reveal">
+                        <div class="skills-terminal-line">
+                            <span class="t-path">~/hasindu</span>
+                            <span class="t-cmd">$ cat ./skills/*.json</span>
+                            <span class="code-cursor" aria-hidden="true"></span>
+                        </div>
                         <h2>Technical <span>Expertise</span></h2>
+                        <p class="skills-subtitle">A snapshot of my stack — the languages, cloud tooling and automation I use to design, build and ship production-grade products.</p>
                     </div>
 
-                    <div class="skill-category reveal">
-                        <h3 class="skill-category-title">
-                            <i class="fas fa-code"></i> Languages & Frameworks
-                        </h3>
-                        <div class="skill-bars">
-                            <div class="skill-bar-item">
-                                <div class="skill-bar-header">
-                                    <span class="skill-bar-name">Laravel & PHP</span>
-                                    <span class="skill-bar-percent">95%</span>
-                                </div>
-                                <div class="skill-bar-track">
-                                    <div class="skill-bar-fill" data-width="95"></div>
+                    <div class="skills-grid">
+                        <article class="code-card reveal">
+                            <div class="code-card-bar">
+                                <span class="code-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                                <span class="code-file"><i class="fas fa-code" aria-hidden="true"></i>languages.json</span>
+                                <span class="code-card-count">4 keys</span>
+                            </div>
+                            <div class="code-card-body">
+                                <h3 class="code-card-title"><span class="mark" aria-hidden="true">//</span> Languages &amp; Frameworks</h3>
+                                <div class="code-lines">
+                                    <div class="code-row">
+                                        <span class="code-ln" aria-hidden="true">01</span>
+                                        <span class="code-expr"><span class="tk-punc">"</span><span class="tk-key">Laravel &amp; PHP</span><span class="tk-punc">"</span><span class="tk-op">:</span> <span class="tk-str">"expert"</span></span>
+                                        <span class="code-meter" aria-hidden="true"><span class="skill-bar-fill" data-width="95"></span></span>
+                                        <span class="code-pct">95<i>%</i></span>
+                                    </div>
+                                    <div class="code-row">
+                                        <span class="code-ln" aria-hidden="true">02</span>
+                                        <span class="code-expr"><span class="tk-punc">"</span><span class="tk-key">JavaScript &amp; TypeScript</span><span class="tk-punc">"</span><span class="tk-op">:</span> <span class="tk-str">"expert"</span></span>
+                                        <span class="code-meter" aria-hidden="true"><span class="skill-bar-fill" data-width="92"></span></span>
+                                        <span class="code-pct">92<i>%</i></span>
+                                    </div>
+                                    <div class="code-row">
+                                        <span class="code-ln" aria-hidden="true">03</span>
+                                        <span class="code-expr"><span class="tk-punc">"</span><span class="tk-key">Vue.js &amp; Nuxt.js</span><span class="tk-punc">"</span><span class="tk-op">:</span> <span class="tk-str">"advanced"</span></span>
+                                        <span class="code-meter" aria-hidden="true"><span class="skill-bar-fill" data-width="90"></span></span>
+                                        <span class="code-pct">90<i>%</i></span>
+                                    </div>
+                                    <div class="code-row">
+                                        <span class="code-ln" aria-hidden="true">04</span>
+                                        <span class="code-expr"><span class="tk-punc">"</span><span class="tk-key">Python &amp; Java (Spring Boot)</span><span class="tk-punc">"</span><span class="tk-op">:</span> <span class="tk-str">"proficient"</span></span>
+                                        <span class="code-meter" aria-hidden="true"><span class="skill-bar-fill" data-width="80"></span></span>
+                                        <span class="code-pct">80<i>%</i></span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="skill-bar-item">
-                                <div class="skill-bar-header">
-                                    <span class="skill-bar-name">JavaScript & TypeScript</span>
-                                    <span class="skill-bar-percent">92%</span>
-                                </div>
-                                <div class="skill-bar-track">
-                                    <div class="skill-bar-fill" data-width="92"></div>
+                        </article>
+
+                        <article class="code-card reveal">
+                            <div class="code-card-bar">
+                                <span class="code-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                                <span class="code-file"><i class="fas fa-server" aria-hidden="true"></i>devops.json</span>
+                                <span class="code-card-count">3 keys</span>
+                            </div>
+                            <div class="code-card-body">
+                                <h3 class="code-card-title"><span class="mark" aria-hidden="true">//</span> Databases &amp; Cloud (DevOps)</h3>
+                                <div class="code-lines">
+                                    <div class="code-row">
+                                        <span class="code-ln" aria-hidden="true">01</span>
+                                        <span class="code-expr"><span class="tk-punc">"</span><span class="tk-key">MySQL, PostgreSQL &amp; MongoDB</span><span class="tk-punc">"</span><span class="tk-op">:</span> <span class="tk-str">"advanced"</span></span>
+                                        <span class="code-meter" aria-hidden="true"><span class="skill-bar-fill" data-width="90"></span></span>
+                                        <span class="code-pct">90<i>%</i></span>
+                                    </div>
+                                    <div class="code-row">
+                                        <span class="code-ln" aria-hidden="true">02</span>
+                                        <span class="code-expr"><span class="tk-punc">"</span><span class="tk-key">AWS Infrastructure &amp; Docker</span><span class="tk-punc">"</span><span class="tk-op">:</span> <span class="tk-str">"advanced"</span></span>
+                                        <span class="code-meter" aria-hidden="true"><span class="skill-bar-fill" data-width="85"></span></span>
+                                        <span class="code-pct">85<i>%</i></span>
+                                    </div>
+                                    <div class="code-row">
+                                        <span class="code-ln" aria-hidden="true">03</span>
+                                        <span class="code-expr"><span class="tk-punc">"</span><span class="tk-key">CI/CD Pipelines &amp; Git</span><span class="tk-punc">"</span><span class="tk-op">:</span> <span class="tk-str">"advanced"</span></span>
+                                        <span class="code-meter" aria-hidden="true"><span class="skill-bar-fill" data-width="90"></span></span>
+                                        <span class="code-pct">90<i>%</i></span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="skill-bar-item">
-                                <div class="skill-bar-header">
-                                    <span class="skill-bar-name">Vue.js & Nuxt.js</span>
-                                    <span class="skill-bar-percent">90%</span>
-                                </div>
-                                <div class="skill-bar-track">
-                                    <div class="skill-bar-fill" data-width="90"></div>
+                        </article>
+
+                        <article class="code-card reveal">
+                            <div class="code-card-bar">
+                                <span class="code-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                                <span class="code-file"><i class="fas fa-robot" aria-hidden="true"></i>tools.json</span>
+                                <span class="code-card-count">4 keys</span>
+                            </div>
+                            <div class="code-card-body">
+                                <h3 class="code-card-title"><span class="mark" aria-hidden="true">//</span> Automation &amp; Tools</h3>
+                                <div class="code-lines">
+                                    <div class="code-row">
+                                        <span class="code-ln" aria-hidden="true">01</span>
+                                        <span class="code-expr"><span class="tk-punc">"</span><span class="tk-key">UiPath RPA (Developer &amp; Admin)</span><span class="tk-punc">"</span><span class="tk-op">:</span> <span class="tk-str">"expert"</span></span>
+                                        <span class="code-meter" aria-hidden="true"><span class="skill-bar-fill" data-width="92"></span></span>
+                                        <span class="code-pct">92<i>%</i></span>
+                                    </div>
+                                    <div class="code-row">
+                                        <span class="code-ln" aria-hidden="true">02</span>
+                                        <span class="code-expr"><span class="tk-punc">"</span><span class="tk-key">Power Apps &amp; SharePoint</span><span class="tk-punc">"</span><span class="tk-op">:</span> <span class="tk-str">"advanced"</span></span>
+                                        <span class="code-meter" aria-hidden="true"><span class="skill-bar-fill" data-width="85"></span></span>
+                                        <span class="code-pct">85<i>%</i></span>
+                                    </div>
+                                    <div class="code-row">
+                                        <span class="code-ln" aria-hidden="true">03</span>
+                                        <span class="code-expr"><span class="tk-punc">"</span><span class="tk-key">Figma</span><span class="tk-punc">"</span><span class="tk-op">:</span> <span class="tk-str">"proficient"</span></span>
+                                        <span class="code-meter" aria-hidden="true"><span class="skill-bar-fill" data-width="80"></span></span>
+                                        <span class="code-pct">80<i>%</i></span>
+                                    </div>
+                                    <div class="code-row">
+                                        <span class="code-ln" aria-hidden="true">04</span>
+                                        <span class="code-expr"><span class="tk-punc">"</span><span class="tk-key">Photoshop</span><span class="tk-punc">"</span><span class="tk-op">:</span> <span class="tk-str">"intermediate"</span></span>
+                                        <span class="code-meter" aria-hidden="true"><span class="skill-bar-fill" data-width="60"></span></span>
+                                        <span class="code-pct">60<i>%</i></span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="skill-bar-item">
-                                <div class="skill-bar-header">
-                                    <span class="skill-bar-name">Python & Java (Spring Boot)</span>
-                                    <span class="skill-bar-percent">80%</span>
-                                </div>
-                                <div class="skill-bar-track">
-                                    <div class="skill-bar-fill" data-width="80"></div>
-                                </div>
-                            </div>
+                        </article>
+                    </div>
+
+                    <div class="skills-footer reveal">
+                        <div class="skills-statusbar">
+                            <span><i class="fas fa-code-branch" aria-hidden="true"></i>main</span>
+                            <span><i class="fas fa-circle-check" aria-hidden="true"></i>11 skills loaded</span>
+                            <span><i class="fas fa-bolt" aria-hidden="true"></i>5+ years shipping</span>
+                            <span class="sb-push"><i class="fas fa-database" aria-hidden="true"></i>UTF-8 · JSON</span>
                         </div>
+                        <a href="cv.pdf" download="Hasindu_Rathnayake_CV.pdf" class="download-resume">
+                            <i class="fas fa-download"></i>
+                            Download Resume
+                        </a>
                     </div>
-
-                    <div class="skill-category reveal">
-                        <h3 class="skill-category-title">
-                            <i class="fas fa-server"></i> Databases & Cloud (DevOps)
-                        </h3>
-                        <div class="skill-bars">
-                            <div class="skill-bar-item">
-                                <div class="skill-bar-header">
-                                    <span class="skill-bar-name">MySQL, PostgreSQL & MongoDB</span>
-                                    <span class="skill-bar-percent">90%</span>
-                                </div>
-                                <div class="skill-bar-track">
-                                    <div class="skill-bar-fill" data-width="90"></div>
-                                </div>
-                            </div>
-                            <div class="skill-bar-item">
-                                <div class="skill-bar-header">
-                                    <span class="skill-bar-name">AWS Infrastructure & Docker</span>
-                                    <span class="skill-bar-percent">85%</span>
-                                </div>
-                                <div class="skill-bar-track">
-                                    <div class="skill-bar-fill" data-width="85"></div>
-                                </div>
-                            </div>
-                            <div class="skill-bar-item">
-                                <div class="skill-bar-header">
-                                    <span class="skill-bar-name">CI/CD Pipelines & Git</span>
-                                    <span class="skill-bar-percent">90%</span>
-                                </div>
-                                <div class="skill-bar-track">
-                                    <div class="skill-bar-fill" data-width="90"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-category reveal">
-                        <h3 class="skill-category-title">
-                            <i class="fas fa-robot"></i> Automation & Tools
-                        </h3>
-                        <div class="skill-bars">
-                            <div class="skill-bar-item">
-                                <div class="skill-bar-header">
-                                    <span class="skill-bar-name">UiPath RPA (Developer & Admin)</span>
-                                    <span class="skill-bar-percent">92%</span>
-                                </div>
-                                <div class="skill-bar-track">
-                                    <div class="skill-bar-fill" data-width="92"></div>
-                                </div>
-                            </div>
-                            <div class="skill-bar-item">
-                                <div class="skill-bar-header">
-                                    <span class="skill-bar-name">Power Apps & SharePoint</span>
-                                    <span class="skill-bar-percent">85%</span>
-                                </div>
-                                <div class="skill-bar-track">
-                                    <div class="skill-bar-fill" data-width="85"></div>
-                                </div>
-                            </div>
-                            <div class="skill-bar-item">
-                                <div class="skill-bar-header">
-                                    <span class="skill-bar-name">Figma</span>
-                                    <span class="skill-bar-percent">80%</span>
-                                </div>
-                                <div class="skill-bar-track">
-                                    <div class="skill-bar-fill" data-width="80"></div>
-                                </div>
-                            </div>
-
-                            <div class="skill-bar-item">
-                                <div class="skill-bar-header">
-                                    <span class="skill-bar-name">Photoshop</span>
-                                    <span class="skill-bar-percent">60%</span>
-                                </div>
-                                <div class="skill-bar-track">
-                                    <div class="skill-bar-fill" data-width="60"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <a href="cv.pdf" download="Hasindu_Rathnayake_CV.pdf" class="download-resume reveal">
-                        <i class="fas fa-download"></i>
-                        Download Resume
-                    </a>
                 </div>
             </div>
         </div>
@@ -300,10 +301,42 @@
         <div class="vertical-title">Works</div>
         <div class="section-container">
             <div class="section-header reveal">
-                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-terminal-line">
+                    <span class="t-path">~/hasindu</span>
+                    <span class="t-cmd">$ ls ./projects --featured</span>
+                    <span class="code-cursor" aria-hidden="true"></span>
+                </div>
+                <h2 class="section-title">Featured <span>Projects</span></h2>
             </div>
             <div class="works-grid">
                 <div class="work-card reveal" onclick="openModal(0)">
+                    <div class="work-bg">
+                        <img src="images/projects/novaith_studio/1.png" alt="Novaith Studio">
+                    </div>
+                    <div class="work-overlay">
+                        <h3>Novaith Studio</h3>
+                        <span>Full Stack Web</span>
+                    </div>
+                </div>
+                <div class="work-card reveal" onclick="openModal(1)">
+                    <div class="work-bg">
+                        <img src="images/projects/lakshi_shoes/1.png" alt="Lakshi Shoes">
+                    </div>
+                    <div class="work-overlay">
+                        <h3>Lakshi Shoes</h3>
+                        <span>Mobile App</span>
+                    </div>
+                </div>
+                <div class="work-card reveal" onclick="openModal(2)">
+                    <div class="work-bg">
+                        <img src="images/projects/asl_tours/1.png" alt="Amara Sri Lanka Tours">
+                    </div>
+                    <div class="work-overlay">
+                        <h3>Amara Sri Lanka Tours</h3>
+                        <span>Full Stack Web</span>
+                    </div>
+                </div>
+                <div class="work-card reveal" onclick="openModal(3)">
                     <div class="work-bg">
                         <img src="images/projects/wa-works/dashboard-l.png" alt="Talent Match AI">
                     </div>
@@ -312,7 +345,7 @@
                         <span>AI & Full Stack</span>
                     </div>
                 </div>
-                <div class="work-card reveal" onclick="openModal(1)">
+                <div class="work-card reveal" onclick="openModal(4)">
                     <div class="work-bg">
                         <img src="images/projects/blaze/main.png" alt="Blaze Entertainment">
                     </div>
@@ -321,7 +354,7 @@
                         <span>Full Stack Web</span>
                     </div>
                 </div>
-                <div class="work-card reveal" onclick="openModal(2)">
+                <div class="work-card reveal" onclick="openModal(5)">
                     <div class="work-bg">
                         <img src="images/projects/coin-xata/main.png" alt="Coin-Xata">
                     </div>
@@ -330,7 +363,7 @@
                         <span>Full Stack Web</span>
                     </div>
                 </div>
-                <div class="work-card reveal" onclick="openModal(3)">
+                <div class="work-card reveal" onclick="openModal(6)">
                     <div class="work-bg">
                         <img src="images/projects/aroma-xata/2.png" alt="Aroma-Xata">
                     </div>
@@ -339,7 +372,7 @@
                         <span>AI & Full Stack</span>
                     </div>
                 </div>
-                <div class="work-card reveal" onclick="openModal(4)">
+                <div class="work-card reveal" onclick="openModal(7)">
                     <div class="work-bg">
                         <img src="images/projects/tea-leaf/2.png" alt="Tea Leaf">
                     </div>
@@ -348,7 +381,7 @@
                         <span>Mobile App and Web App</span>
                     </div>
                 </div>
-                <div class="work-card reveal" onclick="openModal(5)">
+                <div class="work-card reveal" onclick="openModal(8)">
                     <div class="work-bg">
                         <img src="images/projects/the-coffee-69/main.png" alt="The Coffee 69">
                     </div>
@@ -366,7 +399,12 @@
         <div class="vertical-title">Contact</div>
         <div class="section-container">
             <div class="section-header reveal">
-                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-terminal-line">
+                    <span class="t-path">~/hasindu</span>
+                    <span class="t-cmd">$ mail --to contact</span>
+                    <span class="code-cursor" aria-hidden="true"></span>
+                </div>
+                <h2 class="section-title">Get In <span>Touch</span></h2>
             </div>
             <div class="contact-wrapper">
                 <div class="contact-info reveal">
@@ -457,5 +495,7 @@
         </div>
     </div>
     <script src="js/script.js"></script>
+    <script src="js/hero-animation.js" defer></script>
+    <script src="js/section-scroll.js" defer></script>
 </body>
 </html>

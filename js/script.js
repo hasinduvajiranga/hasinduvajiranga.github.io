@@ -1,6 +1,102 @@
 // Project Data
         const projects = [
             {
+                title: "Novaith Studio",
+                category: "Full Stack Web",
+                show_btn:false,
+                icon: "fas fa-palette",
+                gradient: "linear-gradient(135deg, #667eea, #764ba2)",
+                desc: "Developed a full featured web platform for a creative agency using Laravel and Livewire. The system manages end to end workflows including service requests, quotation approvals via secure token links, automated order creation, and designer assignment with accept/reject flows. Features include role based portals (Admin, Designer, Customer), order level chat with attachments, portfolio management with image/video support, and strict privacy separation between customers and designers. All data uses UUID primary keys with service based order code generation. Built with a focus on security, field level access control, and mobile responsiveness.",
+                tags: ["Laravel", "Livewire", "PHP", "Tailwind CSS", "MySQL", "WireUI"],
+                images: [
+                    "images/projects/novaith_studio/03_login.png",
+                    "images/projects/novaith_studio/04_forgot_password.png",
+                    "images/projects/novaith_studio/1.png",
+                    "images/projects/novaith_studio/2.png",
+                    "images/projects/novaith_studio/3.png",
+                    "images/projects/novaith_studio/4.png",
+                    "images/projects/novaith_studio/6.png",
+                    "images/projects/novaith_studio/7.png",
+                    "images/projects/novaith_studio/10.png",
+                    "images/projects/novaith_studio/11.png",
+                    "images/projects/novaith_studio/15.png",
+                    "images/projects/novaith_studio/16.png",
+                    "images/projects/novaith_studio/17.png",
+                    "images/projects/novaith_studio/18.png",
+                    "images/projects/novaith_studio/19.png",
+                    "images/projects/novaith_studio/20.png",
+                    "images/projects/novaith_studio/22.png",
+                    "images/projects/novaith_studio/23.png",
+                    "images/projects/novaith_studio/24.png",
+                    "images/projects/novaith_studio/25.png",
+                    "images/projects/novaith_studio/27.png",
+                    "images/projects/novaith_studio/30_mail_assignment_offer_designer.png",
+                    "images/projects/novaith_studio/31_mail_assignment_response_admin.png",
+                    "images/projects/novaith_studio/34_mail_order_completed_admin.png",
+                    "images/projects/novaith_studio/35_mail_order_invoice_customer.png",
+                    "images/projects/novaith_studio/36_mail_order_invoice_admin.png",
+                    "images/projects/novaith_studio/37_mail_order_status.png",
+                    "images/projects/novaith_studio/38_mail_password_reset.png",
+                    "images/projects/novaith_studio/39_mail_quotation_rejected_admin.png",
+                    "images/projects/novaith_studio/40_mail_quotation_sent_customer.png",
+                    "images/projects/novaith_studio/41_mail_quotation_sent_admin.png",
+                    "images/projects/novaith_studio/42_mail_service_request_admin.png",
+                    "images/projects/novaith_studio/43_mail_welcome_admin.png",
+                    "images/projects/novaith_studio/44_mail_welcome_designer.png",
+                    "images/projects/novaith_studio/50_pdf_quotation.png",
+                    "images/projects/novaith_studio/51_pdf_invoice.png"
+                ]
+            },
+            {
+                title: "Lakshi Shoes",
+                category: "Mobile App",
+                show_btn:false,
+                icon: "fas fa-shoe-prints",
+                gradient: "linear-gradient(135deg, #f093fb, #f5576c)",
+                desc: "Lakshi Shoes is a full-featured, offline first Android POS application built with Flutter for a retail footwear store. It covers end to end store operations: inventory management with variant level stock tracking, QR based product scanning, dynamic billing with item and bill level discounts, Bluetooth receipt and price tag printing, PDF catalog export, and real time sales analytics. Secured via fingerprint and PIN authentication, it uses encrypted Drift storage locally and syncs seamlessly with Supabase in the background. Built with a feature first architecture and Material 3 theming, it delivers a fast, hardware integrated retail experience from shelf to receipt even without internet.",
+                tags: ["Flutter", "Dart", "Supabase", "SQLite"],
+                images: [
+                    "images/projects/lakshi_shoes/1.png",
+                    "images/projects/lakshi_shoes/2.png",
+                    "images/projects/lakshi_shoes/3.png",
+                    "images/projects/lakshi_shoes/4.png",
+                    "images/projects/lakshi_shoes/5.png",
+                    "images/projects/lakshi_shoes/6.png",
+                    "images/projects/lakshi_shoes/7.png",
+                    "images/projects/lakshi_shoes/8.png"
+                ]
+            },
+            {
+                title: "Amara Sri Lanka Tours",
+                category: "Full Stack Web",
+                show_btn:false,
+                icon: "fas fa-plane",
+                gradient: "linear-gradient(135deg, #4facfe, #00f2fe)",
+                desc: "A complete tours booking solution built with Laravel 13 and Livewire, comprising a public facing website and a dedicated admin panel. The customer site lets visitors browse tour plans and transport options, view detailed itineraries, submit bookings, leave ratings, and make enquiries. The admin dashboard empowers operators to manage plans, transport, bookings, users, and review approvals, with average ratings calculated from approved reviews. Built with a modern, responsive UI using Tailwind and WireUI, it delivers a seamless experience across devices.",
+                tags: ["Laravel", "Livewire", "PHP", "Tailwind CSS", "MySQL", "WireUI"],
+                images: [
+                    "images/projects/asl_tours/1.png",
+                    "images/projects/asl_tours/2.png",
+                    "images/projects/asl_tours/3.png",
+                    "images/projects/asl_tours/4.png",
+                    "images/projects/asl_tours/5.png",
+                    "images/projects/asl_tours/6.png",
+                    "images/projects/asl_tours/7.png",
+                    "images/projects/asl_tours/8.png",
+                    "images/projects/asl_tours/9.png",
+                    "images/projects/asl_tours/10.png",
+                    "images/projects/asl_tours/11.png",
+                    "images/projects/asl_tours/12.png",
+                    "images/projects/asl_tours/13.png",
+                    "images/projects/asl_tours/14.png",
+                    "images/projects/asl_tours/15.png",
+                    "images/projects/asl_tours/16.png",
+                    "images/projects/asl_tours/17.png",
+                    "images/projects/asl_tours/18.png",
+                    "images/projects/asl_tours/19.png"
+                ]
+            },
+            {
                 title: "Talent Match AI – Recruitment Platform",
                 category: "AI & Full Stack",
                 show_btn:false,
@@ -150,7 +246,7 @@
             scrollProgress.style.width = scrollPercent + '%';
         });
 
-        // Cookie Helpers
+        // Preference Storage Helpers (localStorage with cookie fallback)
         function setCookie(name, value, days = 365) {
             const date = new Date();
             date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
@@ -158,7 +254,23 @@
             document.cookie = name + "=" + (value || "") + expires + "; path=/; SameSite=Lax";
         }
 
-        function getCookie(name) {
+        function setStored(name, value) {
+            try {
+                localStorage.setItem(name, value);
+            } catch (e) {
+                // localStorage unavailable; fall back to cookie
+            }
+            // Keep cookie in sync as a secondary fallback
+            setCookie(name, value);
+        }
+
+        function getStored(name) {
+            try {
+                const value = localStorage.getItem(name);
+                if (value) return value;
+            } catch (e) {
+                // localStorage unavailable; fall back to cookie
+            }
             const nameEQ = name + "=";
             const ca = document.cookie.split(';');
             for (let i = 0; i < ca.length; i++) {
@@ -198,7 +310,7 @@
             const currentTheme = html.getAttribute('data-theme');
             const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
             html.setAttribute('data-theme', newTheme);
-            setCookie('portfolio-theme', newTheme);
+            setStored('portfolio-theme', newTheme);
             document.querySelector('.theme-controls .theme-btn i').className = newTheme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
         }
 
@@ -209,7 +321,7 @@
 
         function changeColor(color) {
             document.documentElement.setAttribute('data-color', color);
-            setCookie('portfolio-color', color);
+            setStored('portfolio-color', color);
             document.querySelectorAll('.color-opt').forEach(opt => opt.classList.remove('active'));
             document.querySelector(`.color-opt[data-color="${color}"]`).classList.add('active');
         }

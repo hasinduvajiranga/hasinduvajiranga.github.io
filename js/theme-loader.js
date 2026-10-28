@@ -1,6 +1,13 @@
 // Early theme & color loader to prevent flash of incorrect theme
         (function() {
-            function getCookie(name) {
+            function getStored(name) {
+                try {
+                    const value = localStorage.getItem(name);
+                    if (value) return value;
+                } catch (e) {
+                    // localStorage unavailable (private mode, file:// restrictions, etc.)
+                }
+                // Fallback: read from cookie for backwards compatibility
                 const nameEQ = name + "=";
                 const ca = document.cookie.split(';');
                 for (let i = 0; i < ca.length; i++) {
@@ -10,8 +17,9 @@
                 }
                 return null;
             }
-            const savedTheme = getCookie('portfolio-theme') || 'dark';
-            const savedColor = getCookie('portfolio-color') || 'green';
+
+            const savedTheme = getStored('portfolio-theme') || 'dark';
+            const savedColor = getStored('portfolio-color') || 'green';
             document.documentElement.setAttribute('data-theme', savedTheme);
             document.documentElement.setAttribute('data-color', savedColor);
         })();
