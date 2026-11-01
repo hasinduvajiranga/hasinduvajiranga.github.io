@@ -97,6 +97,26 @@
                 ]
             },
             {
+                title: "LeafXata",
+                show_btn:false,
+                category: "Full Stack Web",
+                icon: "fas fa-leaf",
+                gradient: "linear-gradient(135deg, #43e97b, #38f9d7)",
+                desc: "LeafXata is a full stack web system for managing Sri Lankan tea factory suppliers and their green leaf supply chain. It handles factory and collection center administration, supplier profiles with QR coded identification, dynamic leaf rates, daily collection and receipt tracking, payout and advance payments, notifications, and reporting supported by JWT authenticated role based access. Built with a Laravel 13 REST API backend (domain actions, DTOs, repositories) and an Angular 21 frontend using Tailwind and DaisyUI, with automated test suites covering key modules.",
+                tags: ["Laravel", "PHP", "Angular", "Tailwind CSS", "DaisyUI", "JWT"],
+                images: [
+                    "images/projects/LeafXata/1.png",
+                    "images/projects/LeafXata/2.png",
+                    "images/projects/LeafXata/3.png",
+                    "images/projects/LeafXata/4.png",
+                    "images/projects/LeafXata/5.png",
+                    "images/projects/LeafXata/6.png",
+                    "images/projects/LeafXata/7.png",
+                    "images/projects/LeafXata/8.png",
+                    "images/projects/LeafXata/9.png"
+                ]
+            },
+            {
                 title: "Talent Match AI – Recruitment Platform",
                 category: "AI & Full Stack",
                 show_btn:false,
@@ -164,16 +184,6 @@
                     "images/projects/aroma-xata/6.png",
                     "images/projects/aroma-xata/1.png",
                 ]
-            },
-            {
-                title: "Tea Leaf",
-                show_btn:false,
-                category: "Mobile App and Web App",
-                icon: "fas fa-mobile-alt",
-                gradient: "linear-gradient(135deg, #fa709a, #fee140)",
-                desc: "Tea Leaf is a streamlined mobile application designed for tea collectors to efficiently manage leaf procurement. It ensures accurate, real time recording of quantities delivered to factories, guaranteeing data integrity even if QR codes are missing. The user friendly interface simplifies the collection process, while integrated SMS notifications instantly inform farmers of their tea unit’s value and transaction details post-sale. This solution bridges the gap between collectors and factories, providing transparency, reliability, and immediate financial feedback to empower tea growers.",
-                tags: ["Angular", "Spring Boot", "Android Studio", "MySql"],
-                images: ["images/projects/tea-leaf/2.png","images/projects/tea-leaf/1.png"]
             },
             {
                 title: "The Coffee 69",
